@@ -5,16 +5,14 @@ if __name__ != "__main__":
     print("Can't run as a library.")
     sys.exit()
 
-# Important imports
 import os
+import json
 import locale
 import logging
 import argparse
 import datetime
 from time import sleep
 from pathlib import Path
-# Settings
-import json
 
 # Work in the right directory
 global pwd
@@ -24,7 +22,6 @@ os.chdir(pwd)
 # Command line arguments
 parser = argparse.ArgumentParser(description="AllSky capture software.")
 parser.add_argument('-v', action='store_true', help="Verbose logging")
-
 args = parser.parse_args()
 
 def load_defaults():
