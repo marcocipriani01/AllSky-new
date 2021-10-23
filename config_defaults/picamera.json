@@ -1,0 +1,33 @@
+{
+    "camera_number": 0,
+    "width": 0,
+    "height": 0,
+    "jpg_quality": 100,
+    "brightness": 50,
+    "auto_white_balance": true,
+    "white_balance_red": 1.2,
+    "white_balance_blue": 1.2,
+    "rotation": "0",
+    "mirror_vertical": false,
+    "mirror_horizontal": false,
+    "crop": false,
+    "crop_x": 0,
+    "crop_y": 0,
+    "crop_width": 0,
+    "crop_height": 0,
+    "saturation": 0,
+    "sharpness": 0,
+    "contrast": 0,
+    "day": {
+        "exposure": 0.0,
+        "delay": "30s",
+        "iso": 0,
+        "sensor_mode": 1
+    },
+    "night": {
+        "exposure": 30.0,
+        "delay": "1m",
+        "iso": 0,
+        "sensor_mode": 4
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "host": "localhost",
+    "port": 7624,
+    "driver_name": "CCD Simulator",
+    "width_max": 0,
+    "height_max": 0,
+    "jpg_quality": 100,
+    "rotation": "0",
+    "mirror_vertical": false,
+    "mirror_horizontal": false,
+    "settings": {
+        "CCD_FRAME": {
+            "X": 0,
+            "Y": 0,
+            "WIDTH": 1920,
+            "HEIGHT": 1080
+        }
+    },
+    "day": {
+        "exposure": 0.0,
+        "auto_exposure": true,
+        "delay": "30s",
+        "settings": {
+            "CCD_GAIN": 1.0,
+            "ISO": 100,
+            "CCD_COOLER": false,
+            "CCD_TEMPERATURE": -10.0,
+            "CCD_BINNING": {
+                "HOR_BIN": 1,
+                "VER_BIN": 1
+            }
+        }
+    },
+    "night": {
+        "exposure": 30.0,
+        "auto_exposure": false,
+        "delay": "1m",
+        "settings": {
+            "CCD_GAIN": 1.0,
+            "ISO": 100,
+            "CCD_COOLER": false,
+            "CCD_TEMPERATURE": -10.0,
+            "CCD_BINNING": {
+                "HOR_BIN": 1,
+                "VER_BIN": 1
+            }
+        }
+    }
+}

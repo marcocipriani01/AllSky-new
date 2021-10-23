@@ -1,0 +1,20 @@
+{
+    "camera": "picamera",
+    "locale": "en_US.UTF-8",
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "folder": "/path/to/images",
+    "filename": "image.jpg",
+    "sun_elev_sunset": -9.0,
+    "use_fahrenheit": false,
+    "debug": false,
+    "show_time": true,
+    "show_exposure": false,
+    "show_gain": false,
+    "text_alignment": "left",
+    "font_big_size": "32",
+    "font_small_size": "32",
+    "font_color": "#FFFFFF",
+    "font_background": "#000000",
+    "watermark": ""
+}
