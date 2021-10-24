@@ -1,7 +1,7 @@
 {
     "host": "localhost",
     "port": 7624,
-    "driver_name": "CCD Simulator",
+    "driver_name": "QHY CCD QHY5LII-M-6017d",
     "width_max": 0,
     "height_max": 0,
     "jpg_quality": 100,

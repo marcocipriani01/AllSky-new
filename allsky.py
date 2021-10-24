@@ -27,7 +27,7 @@ args = parser.parse_args()
 def load_defaults():
     """Load the default settings"""
     global config
-    with open("./config_default/default.json") as f:
+    with open("./config_defaults/default.json") as f:
         config = json.load(f)
     dir = pwd
     if not dir.endswith(os.sep):

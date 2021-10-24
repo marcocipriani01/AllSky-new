@@ -7,6 +7,7 @@ class Camera:
     config = None
     night_mode = False
     capture_delay = 0
+    connected = False
 
     def __init__(self, name, config_file):
         self.name = name
@@ -15,15 +16,13 @@ class Camera:
 
     def load_config(self):
         self.logger.info("Loading settings...")
-        with open(self.config_file) as f:
-            self.config = json.load(f)
         file = "./config/" + self.config_file
         if os.path.exists(file):
             with open(file) as f:
                 self.config = json.load(f)
         else:
-            logging.info("Loading default configuration.")
-            with open("./config_default/" + self.config_file) as f:
+            self.logger.info("Loading default configuration.")
+            with open("./config_defaults/" + self.config_file) as f:
                 self.config = json.load(f)
 
     def get_capture_delay(self):
@@ -37,6 +36,7 @@ class Camera:
         if self.config is None:
             raise Exception("Camera not configured.")
         self.logger.info("Connecting to %s..." % self.name)
+        return False
 
     def capture(self, output_file):
         if self.config is None:
@@ -44,3 +44,6 @@ class Camera:
 
     def disconnect(self):
         self.logger.info("Disconnecting...")
+
+    def is_connected(self):
+        return self.connected

@@ -49,6 +49,8 @@ class RaspberryCamera(Camera):
                 self.config["white_balance_red"],
                 self.config["white_balance_blue"]
             )
+        self.connected = True
+        return True
 
     def capture(self, output_file):
         super().capture(output_file)
@@ -86,3 +88,4 @@ class RaspberryCamera(Camera):
         if self.camera is not None:
             self.camera.close()
             self.camera = None
+        self.connected = False
